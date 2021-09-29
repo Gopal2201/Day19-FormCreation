@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Task</title>
+    <link rel="stylesheet" href="sample.css" />
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>
+          <form name="myForm" onsubmit="event.preventDefault();onFormSubmit();">
+            <div>
+              <label for="">First Name</label>
+              <input type="text" name="fullname" id="fullname" />
+            </div>
+
+            <div>
+              <label for="">Last Name</label>
+              <input type="text" name="lastname" id="lastname" />
+            </div>
+
+            <div>
+              <label for="">Address</label>
+              <input type="text" name="Address" id="Address" />
+            </div>
+
+            <div>
+              <label for="">Gender</label>
+              <select name="Gender" id="Gender" width="100px">
+                <option value='Male'>Male</option>
+                <option value='Female'>Femal</option>
+              </select>
+            </div> <br>
+            <div>
+            <label for="">Choice of Food</label>
+            <select name="myOption" id="ChoiceOfFood" width=300 style="width: 350px" multiple>
+            <option value='Pizza'>Pizza</option>
+            <option value='Briyani'>Briyani</option>
+            <option value='Idly'>Idly</option>
+            <option value='Dosa'>Dosa</option>
+            </select>
+            </div><br>
+
+            <div>
+              <label for="">State</label>
+              <input type="text" name="State" id="State" />
+            </div>
+
+            <div>
+              <label for="">Country</label>
+              <input type="text" name="Country" id="Country" />
+            </div>
+
+            <div class="form-action-buttons">
+              <input type="submit" value="Submit" />
+            </div>
+          </form>
+        </td>
+
+        <td>
+          <table class="list" id="employeeList">
+            <thead>
+              <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Address</th>
+                <th>Gender</th>
+                <th>Choice of Food</th>
+                <th>State</th>
+                <th>Country</th>
+              </tr>
+            </thead>
+
+            <!-- ///created empty table body -->
+            <tbody></tbody>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+  <script src="sample.js"></script>
+</html>
